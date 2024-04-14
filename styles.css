@@ -1,0 +1,47 @@
+:root {
+    --nav-color: #414535;
+    --project-bg-color: #618985;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    background-color: var(--nav-color);
+    height: 9vh;
+    box-shadow: 0 2px 1px black;;
+}
+
+#flex-nav {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav-item {
+    color: aliceblue;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 2.5%;
+
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.nav-item:hover {
+    background-color: var(--project-bg-color);
+}
+
+.nav-item > a {
+    all: unset;
+}
