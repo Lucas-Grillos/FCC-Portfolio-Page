@@ -1,6 +1,6 @@
 :root {
-    --nav-color: #FF1F35;
-    --project-bg-color: #B1EDE8;
+    --nav-color: #E73645;
+    --project-bg-color: #8F98A1;
     --gradient-top-right: #352D39;
     --gradient-bottom-left: #6D435A;
 }
@@ -12,7 +12,8 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Ubuntu", sans-serif;
+
 }
 
 #navbar {
@@ -80,4 +81,20 @@ header p {
     font-style: italic; 
     font-weight: 100;
     color: var(--nav-color);
+}
+
+#projects {
+    background-color: var(--project-bg-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-tile {
+    display: block;
+}
+
+.tile-img {
+    width: 200px;
+    height: auto;
 }
