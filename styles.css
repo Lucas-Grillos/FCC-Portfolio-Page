@@ -90,6 +90,8 @@ header p {
     background-color: var(--project-bg-color);
     width: 100%;
     padding: 0 25px;
+    font-size: 18px;
+    
 }
 
 #projects-grid {
@@ -115,15 +117,15 @@ header p {
 
 .project-tile {
     width: 100%;
+    max-width: 400px;
     border-radius: 5px;
-    background-color: var(--gradient-bottom-left);
+    background-color: var(--gradient-bottom-left);  
     color: aliceblue;
     cursor: pointer;
 }
 
 .project-tile figcaption {
     height: 4rem;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,3 +153,61 @@ header p {
 .project-tile:hover .fade-in-text {
     opacity: 100%;
 } 
+
+#profile-link {
+    all: unset;
+}
+
+#profile-link-btn {
+    user-select: none;
+    all: unset;
+    background-color: var(--gradient-bottom-left);
+    color: aliceblue;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+#profile-link-btn:hover {
+    background-color: var(--nav-color);
+}
+
+#link-arrow {
+    position: relative;
+    margin-left: 4px;
+    transition: .2s linear;
+    left: 0px;
+}
+
+#profile-link-btn:hover #link-arrow {
+    left: 2px;
+}
+
+@media only screen and (max-width: 1080px) {
+    #projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #projects-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    #projects-header h2 {
+        font-size: 28px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+    
+    .nav-item {
+        font-size: 16px;
+    }
+}
