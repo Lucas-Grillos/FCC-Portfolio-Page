@@ -120,6 +120,11 @@ section {
     align-items: center;
     gap: 5px;
     cursor: pointer;
+    transition: transform .15s ease-in-out;
+}
+
+.icon-item:hover {
+    transform: translateY(10px);
 }
 
 .icon-item i {
@@ -128,7 +133,7 @@ section {
 
 footer {
     width: 100%;
-    border-top: 2px solid var(--nav-color);
+    border-top: 5px solid rgba(231,54,69, 0.7);
     position: absolute;
     bottom: 0;
     height: 100px;
